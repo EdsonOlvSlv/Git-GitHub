@@ -1,4 +1,4 @@
-Sistema de Gestão de Biblioteca
+Sistema de Gestão de Bibliotecas
 
 - Objetivo do Projeto:
 
