@@ -10,3 +10,4 @@ git branch = me mostra qual a branch estou
 git checkout - b = cria uma nova branch a partir da atual
 git checkout master = volta pra master 
 (texto adicionado para testar nova branch)
+git merge nome-da-minha-branch = dentro da master, mescla com a master.
