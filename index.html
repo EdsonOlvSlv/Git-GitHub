@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Biblioteca Escolar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sistema de Biblioteca</h1>
+      <nav>
+        <button data-tab="autores">Autores</button>
+        <button data-tab="livros">Livros</button>
+        <button data-tab="usuarios">Usuários</button>
+        <button data-tab="emprestimos">Empréstimos</button>
+        <button data-tab="relatorios">Relatórios</button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Autores -->
+      <section id="autores" class="tab ativo">
+        <h2>Autores</h2>
+        <form id="formAutor">
+          <input type="hidden" name="id" />
+          <input name="nome" placeholder="Nome" required />
+          <input name="nacionalidade" placeholder="Nacionalidade" />
+          <input
+            name="anoNascimento"
+            type="number"
+            placeholder="Ano Nascimento"
+          />
+          <button>Salvar</button>
+        </form>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nome</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="listaAutores"></tbody>
+        </table>
+      </section>
+
+      <!-- Livros -->
+      <section id="livros" class="tab">
+        <h2>Livros</h2>
+        <form id="formLivro">
+          <input type="hidden" name="id" />
+          <input name="titulo" placeholder="Título" required />
+          <select name="autorId" required></select>
+          <input name="ano" type="number" placeholder="Ano" />
+          <input name="genero" placeholder="Gênero" />
+          <input
+            name="exemplares"
+            type="number"
+            placeholder="Qtd. Exemplares"
+            value="1"
+          />
+          <button>Salvar</button>
+        </form>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Título</th>
+              <th>Autor</th>
+              <th>Disponíveis</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="listaLivros"></tbody>
+        </table>
+      </section>
+
+      <!-- Usuários -->
+      <section id="usuarios" class="tab">
+        <h2>Usuários</h2>
+        <form id="formUsuario">
+          <input type="hidden" name="id" />
+          <input name="nome" placeholder="Nome" required />
+          <input name="matricula" placeholder="Matrícula" required />
+          <select name="tipo">
+            <option value="Aluno">Aluno</option>
+            <option value="Professor">Professor</option>
+          </select>
+          <button>Salvar</button>
+        </form>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nome</th>
+              <th>Tipo</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="listaUsuarios"></tbody>
+        </table>
+      </section>
+
+      <!-- Empréstimos -->
+      <section id="emprestimos" class="tab">
+        <h2>Empréstimos</h2>
+        <form id="formEmprestimo">
+          <select name="usuarioId" required></select>
+          <select name="livroId" required></select>
+          <button>Emprestar</button>
+        </form>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Usuário</th>
+              <th>Livro</th>
+              <th>Data</th>
+              <th>Devolução</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="listaEmprestimos"></tbody>
+        </table>
+      </section>
+
+      <!-- Relatórios -->
+      <section id="relatorios" class="tab">
+        <h2>Relatórios</h2>
+        <div id="relMaisEmprestados"></div>
+        <div id="relUsuariosAtivos"></div>
+      </section>
+    </main>
+
+    <script type="module" src="Biblioteca.js"></script>
+  </body>
+</html>

@@ -1,0 +1,3 @@
+merge -> alterações foram aplicadas
+git init - inicia o git
+commit - pega as alterações, dá um nome e salva no histórico de versionamento - git add .

@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f5f5;
+}
+
+header {
+  background: #3b74ad;
+  color: #fff;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0 0 0.5rem;
+}
+
+nav button {
+  margin: 0.2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  background: #7daddd;
+  color: #fff;
+  border-radius: 4px;
+}
+
+nav button:hover {
+  background: #1abc9c;
+}
+
+main {
+  padding: 1rem;
+}
+
+.tab {
+  display: none;
+}
+.tab.ativo {
+  display: block;
+}
+
+form {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+form input,
+form select,
+form button {
+  padding: 0.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  background: #eee;
+}
