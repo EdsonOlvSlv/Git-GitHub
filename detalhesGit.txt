@@ -11,3 +11,5 @@ git checkout - b = cria uma nova branch a partir da atual
 git checkout master = volta pra master 
 (texto adicionado para testar nova branch)
 git merge nome-da-minha-branch = dentro da master, mescla com a master.
+git remote add origin https://github.com/EdsonOlvSlv/Git-GitHub.git = adiciona para poder subir para o github
+git push origin nome-da-minha-branch = joga minha branch pra la
