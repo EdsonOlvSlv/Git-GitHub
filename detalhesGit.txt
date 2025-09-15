@@ -4,3 +4,4 @@ commit - pega as alterações, dá um nome e salva no histórico de versionament
 git add .
 git commit -m "mensagem" 
 git status = dá o status das alterações atuais
+git log = mostra o histórico dos commit
