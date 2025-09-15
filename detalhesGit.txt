@@ -5,3 +5,8 @@ git add .
 git commit -m "mensagem" 
 git status = dá o status das alterações atuais
 git log = mostra o histórico dos commit
+git restore = descarta alterações
+git branch = me mostra qual a branch estou
+git checkout - b = cria uma nova branch a partir da atual
+git checkout master = volta pra master 
+(texto adicionado para testar nova branch)
